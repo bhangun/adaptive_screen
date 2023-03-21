@@ -46,16 +46,17 @@ class DeviceOS {
   static bool get isMobileOrWeb => isMobile || isWeb;
 }
 
-
+/// DeviceScreen 
 class DeviceScreen {
+  /// small phone size
   static bool isSmallPhone(BuildContext context) => MediaQuery.of(context).size.shortestSide  <= DeviceConfig.smallPhone;
-  
+  /// reguler phone size
   static bool isPhone(BuildContext context) => MediaQuery.of(context).size.shortestSide  <= DeviceConfig.phone;
-
+  /// large phone  size
   static bool isLargePhone(BuildContext context) =>  MediaQuery.of(context).size.shortestSide <= DeviceConfig.largePhone;
-     
+  /// medium screen size
   static bool isMediumScreen(BuildContext context) => MediaQuery.of(context).size.width > DeviceConfig.mediumScreen;
-     
+  // large screen size
   static bool isLargeScreen(BuildContext context) => MediaQuery.of(context).size.width > DeviceConfig.largeScreen;
 }
 
