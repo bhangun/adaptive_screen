@@ -22,3 +22,18 @@ AdaptiveScreen is simple just return widget which represent widget for certain s
   static double largePhone = 640.0;
   static double tablet = 700.0;
 
+## Usage
+```
+class MyExample extends StatelessWidget {
+  const MyExample({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const AdaptiveScreen(
+      phone: Text('will show when screen on phone size'),
+      largeScreen: Text('will show when screen on large screen size'),
+      mediumScreen: Text('will show when screen on medium screen size'),
+    );
+  }
+}
+```
