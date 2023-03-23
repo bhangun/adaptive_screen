@@ -30,7 +30,7 @@ class DeviceConfig {
 }
 
 
-
+/// DeviceOS
 class DeviceOS {
   static bool isIOS = Platform.isIOS;
   static bool isAndroid = Platform.isAndroid;
